@@ -1,7 +1,8 @@
 import picture from "../assets/me.jpeg";
 import Resume from "../assets/JosephVuTrinh_Resume.pdf";
 import { IoLocationOutline } from "react-icons/io5";
-import { FiInstagram, FiLinkedin, FiGithub, FiMail, FiMusic } from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
+import { FaSpotify } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import Spotify from "../components/Spotify";
 
@@ -9,7 +10,7 @@ const socials = [
     { label: "Instagram", href: "https://www.instagram.com/josephvutrinh/", Icon: FiInstagram },
     { label: "LinkedIn", href: "https://linkedin.com/in/josephvutrinh", Icon: FiLinkedin },
     { label: "GitHub", href: "https://github.com/josephvutrinh", Icon: FiGithub },
-    { label: "Spotify", href: "https://open.spotify.com/user/reformedkys?si=f2560ea0a7604b29", Icon: FiMusic },
+    { label: "Spotify", href: "https://open.spotify.com/user/reformedkys?si=f2560ea0a7604b29", Icon: FaSpotify },
     { label: "Email", href: "mailto:josephvu.06@gmail.com", Icon: FiMail },
 ];
 
