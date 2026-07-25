@@ -11,7 +11,7 @@ const socials = [
     { label: "LinkedIn", href: "https://linkedin.com/in/josephvutrinh", Icon: FiLinkedin },
     { label: "GitHub", href: "https://github.com/josephvutrinh", Icon: FiGithub },
     { label: "Spotify", href: "https://open.spotify.com/user/reformedkys?si=f2560ea0a7604b29", Icon: FaSpotify },
-    { label: "Email", href: "mailto:josephvu.06@gmail.com", Icon: FiMail },
+    { label: "Email", href: "mailto:josephvutrinh.work@gmail.com", Icon: FiMail },
 ];
 
 const skills = ["Python", "Java", "JavaScript", "C", "C++", "Swift", "React", "React Native", "Node.js",
@@ -28,7 +28,6 @@ const Home = () => {
                     className="rounded-full w-36 h-36 sm:w-44 sm:h-44 object-cover ring-2 ring-black/15 dark:ring-white/20 transition-all duration-500"
                 />
                 <div className="text-center sm:text-left">
-                    {/* Invisible placeholder reserves the final width so nothing shifts while typing */}
                     <div className="relative mb-3">
                         <h1 aria-hidden="true" className="invisible text-3xl sm:text-4xl font-medium whitespace-nowrap">
                             Hello, I'm Joseph|
