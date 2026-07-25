@@ -44,6 +44,6 @@ export const experiences = [
         company: "Lifetime Fitness",
         role: "Lifeguard",
         dates: "Jan 2023 - Aug 2024",
-        bullets: ["Saving lives"],
+        bullets: ["Saving lives."],
     },
 ];
