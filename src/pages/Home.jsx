@@ -75,7 +75,7 @@ const Home = () => {
             {/* Bio */}
             <section className="max-w-lg mx-auto mt-8 animate-fade-up [animation-delay:240ms]">
                 <p className="text-center sm:text-left leading-relaxed text-nav-light dark:text-nav-dark transition-colors duration-500">
-                    I am currently a computer science student at Virginia Tech, chasing internships in software engineering. 
+                    I am currently a 3rd year computer science student at Virginia Tech, chasing internships in software engineering. 
                     Outside of code, you'll find me on a golf course losing balls in the woods, 
                     getting humbled on the pickleball court, in the gym lifting, or trying not 
                     to fall off a climbing wall.
