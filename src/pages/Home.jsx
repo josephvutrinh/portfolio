@@ -15,7 +15,7 @@ const socials = [
 ];
 
 const skills = ["Python", "Java", "JavaScript", "C", "C++", "Swift", "React", "React Native", "Node.js",
-     "MongoDB", "Firebase/Firestore", "AWS", "SQL", "Tailwind CSS", "AI", "Machine Learning"];
+     "MongoDB", "Firebase/Firestore", "AWS", "SQL", "Tailwind CSS", "AI", "Machine Learning", "Docker"];
 
 const Home = () => {
     return (

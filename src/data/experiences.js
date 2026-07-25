@@ -23,7 +23,7 @@ export const experiences = [
         company: "Virginia Tech Department of Computer Science",
         role: "Undergraduate Researcher",
         dates: "Jan 2026 - June 2026",
-        bullets: ["Built a pose/gaze ML pipeline to classify student engagement from classroom video"]
+        bullets: ["Built a pose/gaze ML pipeline to classify student engagement from classroom video."]
     },
     {
         logo: vtLogo,
