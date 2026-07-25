@@ -5,11 +5,11 @@
 @theme {
     --color-nav-dark: #B3B3B3;
     --color-nav-light: #676767;
-    --color-bg-dark: #141414;
+    --color-bg-dark: #0B0B0B;
     --color-bg-light: #ECECEC;
     --color-text-dark: #FFFFFF;
     --color-text-light: #000000;
-    --color-button-bg-dark: #383737;
+    --color-button-bg-dark: #262525;
     --color-button-bg-light: #C9C9C9;
     --font-rob: 'Roboto', sans-serif;
 }

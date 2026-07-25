@@ -50,7 +50,7 @@ const PhotoStrip = ({ photos }) => {
                             }}
                             style={{ rotate: `${rotations[i % rotations.length]}deg`, width: CARD_WIDTH }}
                             className="shrink-0 snap-center rounded-2xl p-2.5 pb-3 cursor-pointer
-                                bg-white dark:bg-[#262626] shadow-lg ring-1 ring-black/10 dark:ring-white/10
+                                bg-white dark:bg-[#181818] shadow-lg ring-1 ring-black/10 dark:ring-white/10
                                 hover:[rotate:0deg] hover:scale-105 hover:shadow-xl
                                 focus-visible:[rotate:0deg] focus-visible:scale-105 focus-visible:outline-none
                                 focus-visible:ring-2 focus-visible:ring-black/40 dark:focus-visible:ring-white/40
@@ -87,7 +87,7 @@ const PhotoStrip = ({ photos }) => {
                         onClick={(e) => e.stopPropagation()}
                         className="relative flex flex-col max-h-full max-w-[min(90vw,60rem)]
                             rounded-2xl p-4 pb-5
-                            bg-white dark:bg-[#262626] text-text-light dark:text-text-dark
+                            bg-white dark:bg-[#181818] text-text-light dark:text-text-dark
                             shadow-2xl ring-1 ring-black/10 dark:ring-white/10
                             animate-pop-in"
                     >
@@ -96,7 +96,7 @@ const PhotoStrip = ({ photos }) => {
                             aria-label="Close"
                             onClick={() => setSelected(null)}
                             className="absolute -top-3 -right-3 h-9 w-9 rounded-full text-xl leading-none
-                                bg-white dark:bg-[#262626] shadow-lg ring-1 ring-black/10 dark:ring-white/10
+                                bg-white dark:bg-[#181818] shadow-lg ring-1 ring-black/10 dark:ring-white/10
                                 text-nav-light dark:text-nav-dark hover:text-text-light dark:hover:text-text-dark"
                         >
                             ×

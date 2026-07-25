@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     return (
         <Wrapper
             {...linkProps}
-            className="flex flex-col rounded-2xl p-3 bg-white dark:bg-[#262626] shadow-lg
+            className="flex flex-col rounded-2xl p-3 bg-white dark:bg-[#181818] shadow-lg
                 ring-1 ring-black/10 dark:ring-white/10
                 hover:scale-[1.02] hover:shadow-xl
                 [transition:background-color_.5s,scale_.3s,box-shadow_.3s]"
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
                         <span
                             key={tech}
                             className="px-2.5 py-1 rounded-full text-xs font-medium
-                                bg-black/5 dark:bg-white/10 [transition:background-color_.5s]"
+                                bg-black/5 dark:bg-white/[0.06] [transition:background-color_.5s]"
                         >
                             {tech}
                         </span>
