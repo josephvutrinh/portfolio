@@ -8,7 +8,7 @@ export const experiences = [
         logo: saseLogo,
         company: "SASE @ Virginia Tech",
         role: "Web Developer",
-        dates: "Jan 2026 - June 2026",
+        dates: "July 2026 - Present",
         bullets: ["Migrated the club's React codebase to Tailwind CSS and rebuilt 10+ components for a mobile-first redesign."],
     },
     {
