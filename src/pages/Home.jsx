@@ -82,11 +82,6 @@ const Home = () => {
                 </p>
             </section>
 
-            {/* Spotify */}
-            <section className="w-full mt-12 animate-fade-up [animation-delay:360ms]">
-                <Spotify />
-            </section>
-
             {/* Skills */}
             <section className="w-full mt-12 animate-fade-up [animation-delay:480ms]">
                 <h2 className="text-xl font-medium mb-5">Skills and Technologies</h2>
@@ -100,6 +95,11 @@ const Home = () => {
                         </span>
                     ))}
                 </div>
+            </section>
+
+            {/* Spotify */}
+            <section className="w-full mt-12 animate-fade-up [animation-delay:360ms]">
+                <Spotify />
             </section>
         </div>
     );
