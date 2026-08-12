@@ -5,18 +5,25 @@ import engaugeLogo from "../assets/timeline/engauge.png";
 
 export const experiences = [
     {
+        logo: vtLogo,
+        company: "Virginia Tech Department of Computer Science",
+        role: "Undergraduate Teaching Assistant",
+        dates: "Aug 2026 - Present",
+        bullets: ["CS 3114: Data Structures and Algorithms"],
+    },
+    {
         logo: saseLogo,
         company: "SASE @ Virginia Tech",
         role: "Web Developer",
         dates: "July 2026 - Present",
-        bullets: ["Migrated the club's React codebase to Tailwind CSS and rebuilt 10+ components for a mobile-first redesign."],
+        bullets: ["Migrating the club's React codebase to Tailwind CSS and rebuilt 10+ components for a mobile-first redesign."],
     },
     {
         logo: vtLogo,
         company: "Virginia Tech Department of Computer Science",
         role: "Software Developer",
         dates: "June 2026 - Present",
-        bullets: ["Extended VT's SQL learning platform to an iOS app, while adding new features and improving performance."],
+        bullets: ["Extending VT's SQL learning platform to an iOS app, while adding new features and improving performance."],
     },
     {
         logo: vtLogo,
@@ -30,7 +37,7 @@ export const experiences = [
         company: "Virginia Tech Department of Computer Science",
         role: "Undergraduate Teaching Assistant",
         dates: "Jan 2026 - May 2026",
-        bullets: ["Helped students weekly with data structures/OOP through labs, office hours, and debugging support."],
+        bullets: ["CS 1114: Intro to Software Design", "Helped students weekly with data structures/OOP through labs, office hours, and debugging support."],
     },
     {
         logo: engaugeLogo,
