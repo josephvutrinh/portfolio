@@ -14,8 +14,9 @@ const socials = [
     { label: "Email", href: "mailto:josephvutrinh.work@gmail.com", Icon: FiMail },
 ];
 
-const skills = ["Python", "Java", "JavaScript", "C", "C++", "Swift", "React", "React Native", "Node.js",
-     "MongoDB", "Firebase/Firestore", "AWS", "SQL", "Tailwind CSS", "AI", "Machine Learning", "Docker"];
+const skills = ["Python", "Java", "JavaScript", "TypeScript", "C", "C++", "SQL", "Swift",
+    "React", "React Native", "Next.js", "Node.js", "Flask", "FastAPI", "Tailwind CSS",
+    "PostgreSQL", "MongoDB", "Firebase/Firestore", "Docker", "AWS", "Git", "CI/CD", "Machine Learning"];
 
 const Home = () => {
     return (
