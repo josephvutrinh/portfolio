@@ -5,13 +5,6 @@ import engaugeLogo from "../assets/timeline/engauge.png";
 
 export const experiences = [
     {
-        logo: vtLogo,
-        company: "Virginia Tech Department of Computer Science",
-        role: "Undergraduate Teaching Assistant",
-        dates: "Aug 2026 - Present",
-        bullets: ["CS 3114: Data Structures and Algorithms"],
-    },
-    {
         logo: saseLogo,
         company: "SASE @ Virginia Tech",
         role: "Web Developer",
@@ -28,16 +21,16 @@ export const experiences = [
     {
         logo: vtLogo,
         company: "Virginia Tech Department of Computer Science",
-        role: "Undergraduate Researcher",
-        dates: "Jan 2026 - June 2026",
-        bullets: ["Built a pose/gaze ML pipeline to classify student engagement from classroom video."]
+        role: "Undergraduate Teaching Assistant",
+        dates: "Jan 2026 - Present",
+        bullets: ["CS 1114: Intro to Software Design", "CS 3114: Data Structures and Algorithms", "Helped students weekly with data structures/OOP through labs, office hours, and debugging support."],
     },
     {
         logo: vtLogo,
         company: "Virginia Tech Department of Computer Science",
-        role: "Undergraduate Teaching Assistant",
-        dates: "Jan 2026 - May 2026",
-        bullets: ["CS 1114: Intro to Software Design", "Helped students weekly with data structures/OOP through labs, office hours, and debugging support."],
+        role: "Undergraduate Researcher",
+        dates: "Jan 2026 - June 2026",
+        bullets: ["Built a pose/gaze ML pipeline to classify student engagement from classroom video."]
     },
     {
         logo: engaugeLogo,
