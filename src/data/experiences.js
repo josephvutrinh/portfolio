@@ -9,7 +9,7 @@ export const experiences = [
         company: "SASE @ Virginia Tech",
         role: "Web Developer",
         dates: "July 2026 - Present",
-        bullets: ["Migrating the club's React codebase to Tailwind CSS and rebuilt 10+ components for a mobile-first redesign."],
+        bullets: ["Built the club's new website from scratch, and maintaining it with upcoming events and images"],
     },
     {
         logo: vtLogo,
