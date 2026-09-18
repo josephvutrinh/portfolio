@@ -16,7 +16,7 @@ export const experiences = [
         company: "Virginia Tech Department of Computer Science",
         role: "Software Developer",
         dates: "June 2026 - Present",
-        bullets: ["Extending VT's SQL learning platform to an iOS app, while adding new features and improving performance."],
+        bullets: ["Building the backend for VT's SQL learning platform, now deployed to 170 students in a database course."],
     },
     {
         logo: vtLogo,
@@ -37,7 +37,7 @@ export const experiences = [
         company: "Engauge",
         role: "Full Stack Developer Intern",
         dates: "Sep 2024 - Dec 2024",
-        bullets: ["Rebuilt a classroom app's front-end in React and shipped a real-time collaborative whiteboard used by 150+ students."],
+        bullets: ["Rebuilt a classroom app's front-end in React and shipped a real-time collaborative whiteboard syncing across 30+ concurrent clients, used by 150+ students."],
     },
     {
         logo: lifetimeLogo,
