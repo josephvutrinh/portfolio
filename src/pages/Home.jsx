@@ -66,7 +66,7 @@ const Home = () => {
                             href={Resume}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-button-bg-light dark:bg-button-bg-dark px-3 py-1.5 rounded-2xl text-sm font-medium cursor-pointer hover:opacity-80 hover:scale-104 [transition:background-color_.5s,scale_.25s,opacity_.25s]"
+                            className="bg-button-bg-light dark:bg-button-bg-dark backdrop-blur-sm ring-1 ring-black/10 dark:ring-white/10 px-3 py-1.5 rounded-2xl text-sm font-medium cursor-pointer hover:opacity-80 hover:scale-104 [transition:background-color_.5s,scale_.25s,opacity_.25s]"
                         >
                             Download CV
                         </a>
