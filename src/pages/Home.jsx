@@ -5,6 +5,7 @@ import { FiInstagram, FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
 import { FaSpotify } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import Spotify from "../components/Spotify";
+import { Link } from "react-router-dom";
 
 const socials = [
     { label: "Instagram", href: "https://www.instagram.com/josephvutrinh/", Icon: FiInstagram },
@@ -14,10 +15,12 @@ const socials = [
     { label: "Email", href: "mailto:josephvutrinh.work@gmail.com", Icon: FiMail },
 ];
 
-const skills = ["Python", "Java", "JavaScript", "TypeScript", "C", "C++", "SQL", "Swift",
-    "React", "React Native", "Next.js", "Node.js", "Flask", "FastAPI", "Tailwind CSS",
-    "PostgreSQL", "MongoDB", "Firebase/Firestore", "Docker", "AWS", "GCP", "Git", "CI/CD",
-    "WebSockets", "Machine Learning"];
+// const skills = ["Python", "Java", "JavaScript", "TypeScript", "C", "C++", "SQL", "Swift",
+//     "React", "React Native", "Next.js", "Node.js", "Flask", "FastAPI", "Tailwind CSS",
+//     "PostgreSQL", "MongoDB", "Firebase/Firestore", "Docker", "AWS", "GCP", "Git", "CI/CD",
+//     "WebSockets", "Machine Learning"];
+
+const hl = "font-medium text-text-light dark:text-text-dark transition-colors duration-500";
 
 const Home = () => {
     return (
@@ -32,10 +35,10 @@ const Home = () => {
                 <div className="text-center sm:text-left">
                     <div className="relative mb-3">
                         <h1 aria-hidden="true" className="invisible text-3xl sm:text-4xl font-medium whitespace-nowrap">
-                            Hello, I'm Joseph|
+                            Hi, I'm Joseph|
                         </h1>
                         <TypeAnimation
-                            sequence={["Hello, I'm Joseph"]}
+                            sequence={["Hi, I'm Joseph"]}
                             wrapper="h1"
                             cursor={true}
                             speed={45}
@@ -43,7 +46,7 @@ const Home = () => {
                         />
                     </div>
                     <p className="mb-3 text-nav-light dark:text-nav-dark transition-colors duration-500">
-                        Full-Stack Software Engineer
+                        Incoming SWE @ <b className={hl}>Leidos</b>
                     </p>
                 </div>
             </section>
@@ -75,17 +78,20 @@ const Home = () => {
             </section>
 
             {/* Bio */}
-            <section className="max-w-lg mx-auto mt-8 animate-fade-up [animation-delay:240ms]">
-                <p className="text-center sm:text-left leading-relaxed text-nav-light dark:text-nav-dark transition-colors duration-500">
-                    I am currently a 3rd year computer science student at Virginia Tech, chasing internships in software engineering. 
-                    Outside of code, you'll find me on a golf course losing balls in the woods, 
-                    getting humbled on the pickleball court, in the gym lifting, or trying not 
-                    to fall off a climbing wall.
+            <section className="w-full mt-8 space-y-3 text-center sm:text-left leading-relaxed text-nav-light dark:text-nav-dark transition-colors duration-500 animate-fade-up [animation-delay:240ms]">
+                <p>
+                    Hey, I'm <b className={hl}>Joe</b>! I'm a third-year CS student at <b className={hl}>Virginia Tech</b> who 
+                    likes building and learning new things. Lately, I've been building the <b className={hl}>backend</b> for VT's <b className={hl}>SQL learning platform</b>, and working 
+                    on <Link to="/projects" className={`${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`}>software projects</Link> on the side.
+                </p>
+                <p>
+                    Outside of coding, you'll find me lifting, playing pickle with my buddies, climbing, or
+                    hanging out with my two cats, <b className={hl}>Earl</b> and <b className={hl}>Gray</b>. I also love trying new things, and picking up new hobbies.
                 </p>
             </section>
 
             {/* Skills */}
-            <section className="w-full mt-12 animate-fade-up [animation-delay:480ms]">
+            {/* <section className="w-full mt-12 animate-fade-up [animation-delay:480ms]">
                 <h2 className="text-xl font-medium mb-5">Skills and Technologies</h2>
                 <div className="flex flex-wrap justify-center gap-3">
                     {skills.map((skill) => (
@@ -97,7 +103,7 @@ const Home = () => {
                         </span>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* Spotify */}
             <section className="w-full mt-12 animate-fade-up [animation-delay:360ms]">
