@@ -8,6 +8,7 @@ export const experiences = [
     {
         logo: leidosLogo,
         company: "Leidos",
+        dates: "Jan 2027 - Aug 2027",
         role: "Software Engineer Intern",
         bullets: ["Incoming SWE intern."],
     },
@@ -15,14 +16,14 @@ export const experiences = [
         logo: saseLogo,
         company: "SASE @ Virginia Tech",
         role: "Web Developer",
-        dates: "July 2026 - Present",
+        dates: "Jul 2026 - Present",
         bullets: ["Built the club's new website from scratch, and maintaining it with upcoming events and images"],
     },
     {
         logo: vtLogo,
         company: "Virginia Tech Department of Computer Science",
         role: "Software Developer",
-        dates: "June 2026 - Present",
+        dates: "Jun 2026 - Present",
         bullets: ["Building the backend for VT's SQL learning platform, now deployed to 170 students in a database course."],
     },
     {
@@ -36,7 +37,7 @@ export const experiences = [
         logo: vtLogo,
         company: "Virginia Tech Department of Computer Science",
         role: "Undergraduate Researcher",
-        dates: "Jan 2026 - June 2026",
+        dates: "Jan 2026 - Jun 2026",
         bullets: ["Built a pose/gaze ML pipeline to classify student engagement from classroom video."]
     },
     {

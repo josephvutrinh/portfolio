@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -11,7 +11,7 @@
     --color-text-light: #000000;
     --color-button-bg-dark: #26252599;
     --color-button-bg-light: #C9C9C999;
-    --font-body: 'Asap Sharp', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
 @layer base {
