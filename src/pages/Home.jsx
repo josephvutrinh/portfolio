@@ -5,6 +5,7 @@ import { FaSpotify } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import Spotify from "../components/Spotify";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const socials = [
     { label: "Instagram", href: "https://www.instagram.com/josephvutrinh/", Icon: FiInstagram },
@@ -23,6 +24,18 @@ const hl = "font-medium text-text-light dark:text-text-dark transition-colors du
 const hlLink = `${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`;
 
 const Home = () => {
+    const [copied, setCopied] = useState(false);
+
+    // Desktop often has no mail handler (blank page), so copy instead; touch devices keep mailto
+    const copyEmail = (e) => {
+        if (!window.matchMedia("(pointer: fine)").matches) return;
+        e.preventDefault();
+        navigator.clipboard.writeText(e.currentTarget.href.replace("mailto:", "")).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 1500);
+        });
+    };
+
     return (
         <div className="flex flex-col items-center pb-4">
             {/* Hero */}
@@ -57,9 +70,20 @@ const Home = () => {
                                 aria-label={label}
                                 target={href.startsWith("mailto:") ? undefined : "_blank"}
                                 rel="noopener noreferrer"
-                                className="text-xl hover:scale-115 transition-transform duration-250"
+                                onClick={href.startsWith("mailto:") ? copyEmail : undefined}
+                                className="relative text-xl hover:scale-115 transition-transform duration-250"
                             >
                                 <Icon />
+                                {href.startsWith("mailto:") && (
+                                    <span
+                                        role="status"
+                                        className={`absolute -top-7 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-md text-xs whitespace-nowrap
+                                            bg-button-bg-light dark:bg-button-bg-dark backdrop-blur-sm pointer-events-none transition-opacity duration-200
+                                            ${copied ? "opacity-100" : "opacity-0"}`}
+                                    >
+                                        Copied!
+                                    </span>
+                                )}
                             </a>
                         ))}
                         <a
