@@ -7,7 +7,7 @@ const HermesPage = ({ title, description, children }) => {
     }, [title]);
 
     return (
-    <article className="mt-8 mb-8 space-y-8 leading-relaxed">
+    <article className="mt-4 mb-8 space-y-8 leading-relaxed">
         <title>{`${title} | Joseph-Vu Trinh`}</title>
         <meta name="description" content={description} />
         <header className="space-y-3">

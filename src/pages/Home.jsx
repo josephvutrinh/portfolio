@@ -25,7 +25,7 @@ const Home = () => {
     return (
         <div className="flex flex-col items-center pb-4">
             {/* Hero */}
-            <section className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-10 mt-8 sm:mt-12 animate-fade-up">
+            <section className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-10 mt-4 sm:mt-6 animate-fade-up">
                 <img
                     src={picture}
                     alt="Joseph-Vu Trinh"

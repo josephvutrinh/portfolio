@@ -6,7 +6,7 @@ import { experiences } from "../data/experiences";
 const Experience = () => {
     return (
         <div className="flex flex-col pb-4">
-            <section className="mt-8 animate-fade-up">
+            <section className="mt-4 animate-fade-up">
                 <p className="text-nav-light dark:text-nav-dark transition-colors duration-500">
                     Some of my favorite pictures.
                 </p>
