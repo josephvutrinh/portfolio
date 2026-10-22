@@ -2,8 +2,15 @@ import vtLogo from "../assets/timeline/vt.png";
 import lifetimeLogo from "../assets/timeline/lifetime.webp";
 import saseLogo from "../assets/timeline/sase.png";
 import engaugeLogo from "../assets/timeline/engauge.png";
+import leidosLogo from "../assets/timeline/leidos.png";
 
 export const experiences = [
+    {
+        logo: leidosLogo,
+        company: "Leidos",
+        role: "Software Engineer Intern",
+        bullets: ["Incoming SWE intern."],
+    },
     {
         logo: saseLogo,
         company: "SASE @ Virginia Tech",
