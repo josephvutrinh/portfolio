@@ -40,11 +40,11 @@ const NavBar = () => {
         <header className="flex items-center justify-between py-10 gap-2">
             <Link
                 to="/"
-                className="font-semibold tracking-wide text-sm sm:text-base whitespace-nowrap"
+                className="hidden sm:block font-semibold tracking-wide text-base whitespace-nowrap"
             >
                 Joseph-Vu Trinh
             </Link>
-            <div className="flex items-center gap-1 sm:gap-3">
+            <div className="mx-auto sm:mr-0 flex items-center gap-1 sm:gap-3">
                 <nav ref={navRef} className="relative flex items-center text-nav-light dark:text-nav-dark">
                     <div
                         style={{ left: boxStyle.left, width: boxStyle.width, opacity: boxStyle.opacity }}
