@@ -20,6 +20,7 @@ const socials = [
 //     "WebSockets", "Machine Learning"];
 
 const hl = "font-medium text-text-light dark:text-text-dark transition-colors duration-500";
+const hlLink = `${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`;
 
 const Home = () => {
     return (
@@ -78,11 +79,11 @@ const Home = () => {
                 <p>
                     Hey, I'm <b className={hl}>Joe</b>! I'm a third-year CS student at <b className={hl}>Virginia Tech</b> who 
                     likes building and learning new things. Lately, I've been building the <b className={hl}>backend</b> for VT's <b className={hl}>SQL learning platform</b>, and working 
-                    on <Link to="/projects" className={`${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`}>software projects</Link> on the side.
+                    on <Link to="/projects" className={hlLink}>software projects</Link> on the side.
                 </p>
                 <p>
                     Outside of coding, you'll find me lifting, playing pickle with my buddies, climbing, or
-                    hanging out with my two cats, <b className={hl}>Earl</b> and <b className={hl}>Gray</b>. I also love trying new things, and picking up new hobbies.
+                    hanging out with my two cats, <Link to="/experience" className={hlLink}>Earl and Gray</Link>. I also love trying new things, and picking up new hobbies.
                 </p>
             </section>
 

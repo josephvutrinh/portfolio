@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiExternalLink, FiPlay } from "react-icons/fi";
 import useSpotify from "../hooks/useSpotify";
+import SleepingCat from "./SleepingCat";
 
 const tabs = [
     { key: "recentlyPlayed", label: "Recently Played" },
@@ -50,7 +51,8 @@ const Spotify = () => {
     const rest = tracks.slice(1, 5);
 
     return (
-        <div className="bg-white dark:bg-[#101010] rounded-2xl p-4 sm:p-5 shadow-lg ring-1 ring-black/10 dark:ring-white/10 text-black dark:text-white mx-auto w-full transition-colors duration-500">
+        <div className="relative bg-white dark:bg-[#101010] rounded-2xl p-4 sm:p-5 shadow-lg ring-1 ring-black/10 dark:ring-white/10 text-black dark:text-white mx-auto w-full transition-colors duration-500">
+            <SleepingCat />
             {/* Header */}
             <div className="flex items-center justify-between gap-3 mb-4">
                 <h2 className="text-sm sm:text-base font-semibold">
