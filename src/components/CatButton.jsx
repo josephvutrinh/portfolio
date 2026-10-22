@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaCat } from "react-icons/fa";
 import cat1 from "../assets/catphotos/cat1.jpeg";
 import cat2 from "../assets/catphotos/cat2.jpeg";
@@ -18,12 +18,28 @@ const CAT_PHOTOS = [
 // each photo keeps its own tilt so nothing rotates when flipping
 const TILTS = [0, 4, -3, 6, -5, 2, -6];
 
-// native popover handles open/close, click-outside and Escape
+// any [data-cat-toggle] element opens/closes the stack; click outside or Escape closes it
+// not a native popover: its top-layer backdrop makes iOS Safari paint a solid bar over the bottom toolbar
 // open/close animation lives in index.css (#cat-photos)
 const CatButton = () => {
+    const [open, setOpen] = useState(false);
     const [top, setTop] = useState(0);
     const [leaving, setLeaving] = useState(null);
     const [drag, setDrag] = useState(null); // { sx, sy, x, y } while the top photo is held
+
+    useEffect(() => {
+        const onClick = (e) => {
+            if (e.target.closest("[data-cat-toggle]")) setOpen((o) => !o);
+            else if (!e.target.closest("#cat-photos")) setOpen(false);
+        };
+        const onKey = (e) => e.key === "Escape" && setOpen(false);
+        document.addEventListener("click", onClick);
+        document.addEventListener("keydown", onKey);
+        return () => {
+            document.removeEventListener("click", onClick);
+            document.removeEventListener("keydown", onKey);
+        };
+    }, []);
 
     const advance = () => setTop((top + 1) % CAT_PHOTOS.length);
 
@@ -38,7 +54,8 @@ const CatButton = () => {
     return (
         <>
             <button
-                popoverTarget="cat-photos"
+                data-cat-toggle
+                aria-expanded={open}
                 aria-label="Earl and Gray"
                 className="fixed bottom-4 right-4 z-20 p-3 rounded-full text-xl bg-button-bg-light dark:bg-button-bg-dark backdrop-blur-sm ring-1 ring-black/10 dark:ring-white/10 cursor-pointer hover:scale-110 [transition:background-color_.5s,scale_.25s]"
             >
@@ -46,8 +63,7 @@ const CatButton = () => {
             </button>
             <div
                 id="cat-photos"
-                popover="auto"
-                className="fixed inset-auto bottom-20 right-4 m-0 border-0 overflow-visible w-44 sm:w-64 p-0 bg-transparent origin-bottom-right"
+                className={`fixed bottom-20 right-4 z-20 w-44 sm:w-64 origin-bottom-right ${open ? "open" : ""}`}
             >
                 {/* tap the top photo, or drag it anywhere and let go, to send it to the back */}
                 <div
