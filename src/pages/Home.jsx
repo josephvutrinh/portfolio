@@ -46,7 +46,7 @@ const Home = () => {
                         />
                     </div>
                     <p className="mb-3 text-nav-light dark:text-nav-dark transition-colors duration-500">
-                        Incoming SWE @ <b className={hl}>Leidos</b>
+                        Incoming SWE Intern @ <b className={hl}>Leidos</b>
                     </p>
                 </div>
             </section>
