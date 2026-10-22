@@ -80,14 +80,13 @@ const Home = () => {
             {/* Bio */}
             <section className="w-full mt-8 space-y-3 text-center sm:text-left leading-relaxed text-nav-light dark:text-nav-dark transition-colors duration-500 animate-fade-up [animation-delay:240ms]">
                 <p>
-                    Hey, I'm <b className={hl}>Joe</b>! I'm currently a third-year CS student at <b className={hl}>Virginia Tech</b>.
-                    Lately, I've been spending my time working on <Link to="/projects" className={`${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`}>software projects</Link>, grinding LeetCode, and learning
-                    a bunch of new things along the way.
+                    Hey, I'm <b className={hl}>Joe</b>! I'm a third-year CS student at <b className={hl}>Virginia Tech</b> who 
+                    likes building and learning new things. Lately, I've been building the <b className={hl}>backend</b> for VT's <b className={hl}>SQL learning platform</b>, and working 
+                    on <Link to="/projects" className={`${hl} underline underline-offset-4 decoration-nav-light/60 dark:decoration-nav-dark/60 hover:decoration-current`}>software projects</Link> on the side.
                 </p>
                 <p>
-                    Outside of coding, I really enjoy lifting, playing pickle with my buddies, climbing, and
-                    spending time with my two cats, <b className={hl}>Earl</b> and <b className={hl}>Gray</b>. I also love trying new things, meeting new people,
-                    and picking up new hobbies.
+                    Outside of coding, you'll find me lifting, playing pickle with my buddies, climbing, or
+                    hanging out with my two cats, <b className={hl}>Earl</b> and <b className={hl}>Gray</b>. I also love trying new things, and picking up new hobbies.
                 </p>
             </section>
 
