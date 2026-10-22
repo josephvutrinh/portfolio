@@ -2,9 +2,15 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import ParticleBackground from "./ParticleBackground";
 import CatButton from "./CatButton";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Layout = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <div className="min-h-screen flex flex-col overflow-x-clip bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark transition-colors duration-500">
             <ParticleBackground />

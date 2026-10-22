@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const HermesPage = ({ title, description, children }) => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [title]);
-
     return (
     <article className="mt-4 mb-8 space-y-8 leading-relaxed">
         <title>{`${title} | Joseph-Vu Trinh`}</title>
