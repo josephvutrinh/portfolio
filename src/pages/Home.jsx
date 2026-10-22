@@ -1,6 +1,5 @@
 import picture from "../assets/me.jpeg";
 import Resume from "../assets/JosephVuTrinh_Resume.pdf";
-import { IoLocationOutline } from "react-icons/io5";
 import { FiInstagram, FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
 import { FaSpotify } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
@@ -48,33 +47,30 @@ const Home = () => {
                     <p className="mb-3 text-nav-light dark:text-nav-dark transition-colors duration-500">
                         Incoming SWE Intern @ <b className={hl}>Leidos</b>
                     </p>
-                </div>
-            </section>
-
-            {/* Socials + CV */}
-            <section className="flex flex-wrap items-center justify-center gap-5 sm:gap-7 mt-8 animate-fade-up [animation-delay:120ms]">
-                <div className="flex items-center text-2xl sm:text-3xl gap-5 sm:gap-7">
-                    {socials.map(({ label, href, Icon }) => (
+                    {/* Socials + CV */}
+                    <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+                        {socials.map(({ label, href, Icon }) => (
+                            <a
+                                key={label}
+                                href={href}
+                                aria-label={label}
+                                target={href.startsWith("mailto:") ? undefined : "_blank"}
+                                rel="noopener noreferrer"
+                                className="text-xl hover:scale-115 transition-transform duration-250"
+                            >
+                                <Icon />
+                            </a>
+                        ))}
                         <a
-                            key={label}
-                            href={href}
-                            aria-label={label}
-                            target={href.startsWith("mailto:") ? undefined : "_blank"}
+                            href={Resume}
+                            target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:scale-115 transition-transform duration-250"
+                            className="bg-button-bg-light dark:bg-button-bg-dark px-3 py-1.5 rounded-2xl text-sm font-medium cursor-pointer hover:opacity-80 hover:scale-104 [transition:background-color_.5s,scale_.25s,opacity_.25s]"
                         >
-                            <Icon />
+                            Download CV
                         </a>
-                    ))}
+                    </div>
                 </div>
-                <a
-                    href={Resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-button-bg-light dark:bg-button-bg-dark px-4 py-2.5 rounded-2xl text-sm font-medium cursor-pointer hover:opacity-80 hover:scale-104 [transition:background-color_.5s,scale_.25s,opacity_.25s]"
-                >
-                    Download CV
-                </a>
             </section>
 
             {/* Bio */}
