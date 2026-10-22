@@ -107,7 +107,7 @@ const Home = () => {
                 </p>
                 <p>
                     Outside of coding, you'll find me lifting, playing pickle with my buddies, climbing, or
-                    hanging out with my two cats, <Link to="/experience" className={hlLink}>Earl and Gray</Link>. I also love trying new things, and picking up new hobbies.
+                    hanging out with my two cats, <button popoverTarget="cat-photos" className={`${hlLink} cursor-pointer`}>Earl and Gray</button>. I also love trying new things, and picking up new hobbies.
                 </p>
             </section>
 

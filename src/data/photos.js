@@ -1,4 +1,3 @@
-import meow from "../assets/photos/meow.jpeg";
 import july4 from "../assets/photos/july4.jpeg";
 import mattbday from "../assets/photos/mattbday.jpeg";
 import goldengate from "../assets/photos/goldengate.jpeg";

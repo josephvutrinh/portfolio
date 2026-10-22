@@ -59,6 +59,76 @@
     animation: pop-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* cat photo stack: grows out of the corner button and photos fan out on open, reverses on close */
+#cat-photos {
+    opacity: 0;
+    scale: 0.4;
+    translate: 0 16px;
+    transition: opacity 0.18s, scale 0.18s ease-in, translate 0.18s ease-in,
+        display 0.18s allow-discrete, overlay 0.18s allow-discrete;
+}
+
+#cat-photos:popover-open {
+    opacity: 1;
+    scale: 1;
+    translate: 0;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@starting-style {
+    #cat-photos:popover-open {
+        opacity: 0;
+        scale: 0.4;
+        translate: 0 16px;
+    }
+}
+
+/* photos: fan out on open (animation), fold back on close (transition), snap to new tilt when flipping */
+#cat-photos img {
+    rotate: var(--tilt);
+    transition: translate 0.3s ease-out;
+    animation: cat-fan 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#cat-photos:not(:popover-open) img {
+    rotate: 0deg;
+    transition: rotate 0.18s;
+}
+
+/* keep cat-fan first so adding cat-flip doesn't replay the fan */
+#cat-photos img.flipping {
+    animation: cat-fan 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), cat-flip 0.55s;
+}
+
+@keyframes cat-fan {
+    from { rotate: 0deg; }
+}
+
+/* top photo swings out to the left, clears the stack, then tucks in behind it
+   fast flick out (reacts to the click instantly), gentle settle back */
+@keyframes cat-flip {
+    0% {
+        z-index: 99;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1);
+    }
+    45% {
+        translate: -105% -3%;
+        rotate: calc(var(--tilt) - 8deg);
+        z-index: 99;
+        animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1);
+    }
+    46% { z-index: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #cat-photos,
+    #cat-photos img {
+        transition: none;
+        animation: none;
+    }
+}
+
 @keyframes zzz {
     0% { opacity: 0; transform: translate(0, 0) scale(0.8); }
     20% { opacity: 1; }
