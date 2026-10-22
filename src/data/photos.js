@@ -24,15 +24,15 @@ export const photos = [
         caption: "Matt's birthday" 
     },
     { 
-        src: goldengate, 
-        alt: "Golden Gate Bridge", 
-        date: "07/11/2026", 
-        caption: "Golden Gate Bridge" 
-    },
-    { 
         src: uva, 
         alt: "UVA", 
         date: "09/25/2026", 
         caption: "Visiting UVA" 
     },
+    // { 
+    //     src: goldengate, 
+    //     alt: "Golden Gate Bridge", 
+    //     date: "07/11/2026", 
+    //     caption: "Golden Gate Bridge" 
+    // },
 ];
